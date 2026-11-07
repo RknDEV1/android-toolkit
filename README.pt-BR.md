@@ -1,28 +1,26 @@
 # Android Toolkit
 
-Utilitários e componentes reutilizáveis para apps **Android** (Kotlin + Jetpack Compose).
+Utilitários reutilizáveis para apps **Android** (Kotlin + Jetpack Compose).
 
 > English: [README.md](README.md)
 
-Companheiro dos packages iOS do [RknDEV1](https://github.com/RknDEV1).
+## Recursos
 
-## Status
+| Módulo | Status | Descrição |
+|--------|--------|-----------|
+| **Validators** | Pronto | E-mail + CPF |
+| **Formatters** | Pronto | R$, telefone, CEP, CPF |
+| **SecureStorage** | Planejado | Armazenamento seguro + biometria |
+| **Compose UI** | Planejado | Botões, campos, cards |
 
-**Em construção** — estrutura inicial. Recursos serão adicionados aos poucos.
+## Uso
 
-## Recursos planejados
-
-- Armazenamento seguro + biometria
-- Validadores (e-mail, CPF)
-- Formatters (R$, telefone, CEP)
-- Componentes Compose
-- Helpers de rede
-
-## Requisitos
-
-- Android Studio recente
-- Kotlin 2.0+
-- Min SDK 26
+```kotlin
+Validators.isValidCPF("390.533.447-05")
+Formatters.currency(19.90)
+Formatters.phone("79999999999")
+Formatters.cep("49000000")
+```
 
 ## Licença
 

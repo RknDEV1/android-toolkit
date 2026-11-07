@@ -1,30 +1,34 @@
 # Android Toolkit
 
-Reusable utilities and components for **Android** apps (Kotlin + Jetpack Compose).
+Reusable utilities for **Android** apps (Kotlin + Jetpack Compose).
 
 > Português: [README.pt-BR.md](README.pt-BR.md)
 
 Companion to the iOS packages on [RknDEV1](https://github.com/RknDEV1).
 
-## Status
+## Features
 
-**In progress** — initial structure. Features will be added incrementally.
+| Module | Status | Description |
+|--------|--------|-------------|
+| **Validators** | Done | Email + CPF |
+| **Formatters** | Done | R$, phone, CEP, CPF |
+| **SecureStorage** | Planned | EncryptedSharedPreferences + Biometric |
+| **Compose UI** | Planned | Buttons, fields, cards |
 
-## Planned features
+## Usage
 
-| Area | Status |
-|------|--------|
-| Secure storage (EncryptedSharedPreferences / Biometric) | Planned |
-| Validators (email, CPF) | Planned |
-| Formatters (BRL, phone, CEP) | Planned |
-| Compose components (buttons, text fields, cards) | Planned |
-| Network helpers (retry, timeout) | Planned |
+```kotlin
+Validators.isValidCPF("390.533.447-05")
+Formatters.currency(19.90)
+Formatters.phone("79999999999")
+Formatters.cep("49000000")
+```
 
 ## Requirements
 
-- Android Studio Ladybug or newer
+- Android Studio Ladybug+
 - Kotlin 2.0+
-- Min SDK 26 (Android 8.0)
+- Min SDK 26
 
 ## License
 
